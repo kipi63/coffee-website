@@ -37,6 +37,22 @@ html::-webkit-scrollbar-thumb{
 body{
 	background: $bg;
 }
+#menu-btn{
+	display: none;
+}
+.btn{
+	margin-top: 1rem;
+	display: inline-block;
+	padding: .9rem 3rem;
+	font-size: 1.7rem;
+	color: #fff;
+	background: $main-color;
+	cursor: pointer;
+	&:hover{
+		letter-spacing: .2rem;
+	}
+
+}
 .header{
 	background: $bg;
 	display: flex;
@@ -76,9 +92,7 @@ body{
 			color: $main-color;
 		}
 	}
-	#menu-btn{
-		display: none;
-	}
+	
 	&__search {
 		position: absolute;
 		top: 115%;
@@ -111,4 +125,52 @@ body{
 
 	}
 }
+.cart{
+	&__container{
+		position: absolute;
+		top: 100%;
+		right: -100%;
+		height: calc(100vh - 9.5rem);
+		width: 35rem;
+		background: #fff;
+		padding: 0 1.5rem;
+	}
+	&__item{
+		position: relative;
+		margin: 2rem 0;
+		display: flex;
+		align-items: center;
+		gap:1.5rem;
+		& .fa-times{
+			position: absolute;
+			top: 1rem;
+			right: 1rem;
+			font-size: 2rem;
+			cursor: pointer;
+			color: $black;
+			&:hover{
+				color: $main-color;
+			}
+		}
+		& img{
+			height: 7rem;
 
+		}
+		
+	}
+	&__content{
+		& h3{
+			font-size: 2rem;
+			color: $black;
+			padding-bottom: 0.5rem;
+		}
+	}
+	&__price{
+		font-size: 1.5rem;
+		color: $main-color;
+	}
+	&__btn{
+		width: 100%;
+		text-align: center;
+	}
+}
