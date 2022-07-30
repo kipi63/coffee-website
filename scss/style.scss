@@ -37,6 +37,9 @@ html::-webkit-scrollbar-thumb{
 body{
 	background: $bg;
 }
+section{
+	padding: 2rem 7%;
+}
 #menu-btn{
 	display: none;
 }
@@ -96,6 +99,9 @@ body{
 	}
 	
 	&__search {
+		&.active{
+			transform: scaleY(1);	
+		}
 		position: absolute;
 		top: 115%;
 		right: 7%;
@@ -128,15 +134,18 @@ body{
 	}
 }
 .cart{
-	&__container{
-		position: absolute;
-		top: 100%;
-		right: -100%;
-		height: calc(100vh - 9.5rem);
-		width: 35rem;
-		background: #fff;
-		padding: 0 1.5rem;
+	position: absolute;
+	top: 100%;
+	right: -100%;
+	height: calc(100vh - 9.5rem);
+	width: 35rem;
+	background: #fff;
+	padding: 0 1.5rem;
+	&.active{
+		right: 0;
 	}
+	
+	
 	&__item{
 		position: relative;
 		margin: 2rem 0;
@@ -174,6 +183,29 @@ body{
 	&__btn{
 		width: 100%;
 		text-align: center;
+	}
+}
+.home{
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background: url(../img/home-img.jpeg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	&__content{
+		max-width: 60rem;
+		& h3{
+			font-size: 6rem;
+			text-transform: uppercase;
+			color: #fff;
+		}
+		& p {
+			font-size: 1rem;
+			font-weight: lighter;
+			line-height: 1.8;
+			padding: 1rem 0;
+			color: #eee
+		}
 	}
 }
 

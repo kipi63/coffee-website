@@ -2,6 +2,9 @@
 	html{
 		font-size: 55%;
 	}
+	section{
+		padding: 2rem;
+	}
 	.header{
 		padding: 1.5rem 2rem;
 		width: 100%;
@@ -26,10 +29,41 @@
 		&__icons{
 			text-align: left;
 		}
+		&__search{
+			width: 90%;
+			right: 2rem;
+		}
 		
 	}
 	#menu-btn{
 		display: inline-block;
 
 	}
+	.home{
+		background-position: left;
+		justify-content: center;
+		text-align: center;
+		&__content{
+			& h3 {
+				font-size: 4.5rem;
+			}
+			& p {
+				font-size: 1.5rem;
+			}
+		}
+	}
+	
+}
+
+
+@media (max-width : 450px) {
+	html{
+		font-size: 50%;
+	}
+	.header{
+		&__search{
+			max-width: 35rem;
+		}
+	}
+
 }
