@@ -56,6 +56,24 @@ section{
 	}
 
 }
+.heading{
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	padding-bottom: 3.5rem;
+	font-size: 4rem;
+	& span{
+		color: $main-color;
+		text-transform: uppercase;
+	}
+}
+.stars{
+	padding: 1.5rem;
+	& i {
+		font-size: 1.7rem;
+		color: $main-color;
+	}
+}
 .header{
 	background: $bg;
 	display: flex;
@@ -209,6 +227,301 @@ section{
 	}
 }
 
+.about{
+	
+	&__row{
+		display: flex;
+		align-items: center;
+		background: $black;
+		gap: 1rem;
+		flex-wrap: wrap;
+
+	}
+	&__image{
+		flex: 1 1 45rem ;
+		& img{
+			width: 100%;
+
+		}
+		
+	}
+	&__content{
+		flex: 1 1 45rem;
+		padding: 2rem;
+		& h3{
+			font-size: 3rem;
+			color: #fff;
+		}
+		& p {
+			font-size: 1.6rem;
+			color: #ccc;
+			padding: 1rem 0;
+			line-height: 1.8;
+		}
+	}
+}
+.menu{
+	&__comtainer{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+		gap : 1.5rem;
+	}
+	&__box{
+		padding: 5rem;
+		text-align: center;
+		border: $border;
+		&:hover{
+			background: #fff;
+			&>*{
+				color: $black;
+			}
+		}
+		
+		& img{
+			height: 10rem;
+		}
+		& h3{
+			color: #fff;
+			font-size: 2rem;
+			padding: 1rem 0;
+		}
+
+	}
+	&__prise{
+		color: #fff;
+		padding: .5rem;
+		font-size: 2.5rem;
+		& span {
+			font-size: 1.5rem;
+			text-decoration: line-through;
+		}
+	}
+}
+.products{
+	&__container{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+		gap : 1.5rem;
+	}
+	&__box{
+		text-align: center;
+		border: $border;
+		padding: 2rem;
+	}
+	&__icons{
+		& a {
+			height: 5rem;
+			width: 5rem;
+			line-height: 5rem;
+			font-size: 2rem;
+			border: $border;
+			color: #fff;
+			margin: .3rem;
+			&:hover{
+				background: $main-color;
+			}
+		}
+	}
+	&__img{
+		padding: 2.5rem 0;
+		& img{
+			height: 25rem;
+		}
+	}
+	&__content{
+		& h3{
+			color: #fff;
+			font-size: 2.5rem;
+		}
+	}
+	
+	&__price{
+		color: #fff;
+		font-size: 2.5rem;
+		& span{
+			text-decoration: line-through;
+			font-size: 1.5rem;
+			font-weight: lighter;
+		}
+	}
+}
+.review{
+	&__container{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+		gap : 1.5rem;
+	}
+	&__box{
+		text-align: center;
+		border: $border;
+		padding: 3rem 2rem;
+		& p{
+			font-size: 1.5rem;
+			line-height: 1.8;
+			color: #ccc;
+			padding: 2rem 0;
+
+		}
+		& h3 {
+			padding: 1rem 0;
+			font-size: 2rem;
+			color: #fff;
+		}
+	}
+	&__user{
+		height: 7rem;
+		width: 7rem;
+		border-radius: 50%;
+		object-fit: cover;
+
+	}
+}
+.contact{
+	&__row{
+		display: flex;
+		background: $black;
+		flex-wrap: wrap;
+		gap : 1rem;
+		& form {
+			flex: 1 1 45rem;
+			padding: 5rem 2rem;
+			text-align: center;
+			& h3 {
+				text-transform: uppercase;
+				font-size: 3.5rem;
+				text-align: center;
+				color: #fff;
+			}
+		}
+
+	}
+	&__map{
+		flex: 1 1 45rem;
+		width: 100%;
+
+	}
+	&__input-box{
+		display: flex;
+		align-items: center;
+		margin: 2rem 0;
+		background: $black;
+		border : $border;
+		& span {
+			color: #fff;
+			font-size: 2rem;
+			padding-left: 2rem;
+
+		}
+		& input{
+			width: 100%;
+			padding: 2rem;
+			font-size: 1.7rem;
+			color: #fff;
+			text-transform: none;
+			background: none;
+		}
+	}
+}
+.blogs{
+	&__container{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+		gap : 1.5rem;
+	}
+	&__box{
+		border: $border;
+		
+		
+	}
+	&__image{
+		height: 25rem;
+		overflow: hidden;
+		width: 100%;
+		& img{
+			height: 100%;
+			object-fit: cover;
+			width: 100%;
+			&:hover{
+				transform: scale(1.2);
+			}
+		}
+		
+	}
+	&__content{
+		padding: 2rem;
+		& span {
+			color: $main-color;
+			display: block;
+			padding-top: 1rem;
+			font-size: 2rem;
+		}
+		& p {
+			font-size: 1.6rem;
+			line-height: 1.8;
+			color: #ccc;
+			padding: 1rem 0;
+
+		}
+
+	}
+	&__title{
+		font-size: 2.5rem;
+		line-height: 1.5;
+		color: #fff;
+		&:hover{
+			color: $main-color;
+		}
+	}
+}
+.footer{
+	padding: 2rem 7%;
+	background: $black;
+	text-align: center;
+	&__share{
+		padding: 1rem 0;
+		& a {
+			height: 5rem;
+			width: 5rem;
+			line-height: 5rem;
+			font-size: 2rem;
+			color: #fff;
+			border: $border;
+			margin: .3rem;
+			border-radius: 50%;
+			&:hover{
+				background-color: $main-color;
+			}
+		}
+
+	}
+	&__links{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding: 2rem 0;
+		gap: 1rem;
+		& a {
+			padding: .7rem 2rem;
+			color:#fff;
+			border: $border;
+			font-size: 2rem;
+			&:hover{
+				background-color: $main-color;
+
+			}
+		}
+
+	}
+	&__credit{
+		font-size: 2rem;
+		color: #fff;
+		font-weight: lighter;
+		padding: 1.5rem;
+		& span {
+			color: $main-color;
+		}
+	}
+}
 
 
 
